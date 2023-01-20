@@ -23,7 +23,7 @@ touch Dockerfile
 ## Instructions
 
  - Edit the file using (nano, vim, vi ) :
-   for example:
+  - for example:
 ``` 
   vim Dockerfile
 ```
