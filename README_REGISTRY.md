@@ -39,8 +39,19 @@ docker image remove localhost:5000/my-ubuntu
 docker pull localhost:5000/my-ubuntu
 ```
 
- - Lets see what we have in our registry :
+ - Lets see what repositories we have in our registry :
 ```
 curl -X GET http://localhost:5000/v2/_catalog
+```
+   Expected result:
+```
+{"repositories":["my-ubuntu"]}
+```
+ - Lets see what tags we have in specific repository :
+```
 curl -X GET http://localhost:5000/v2/my-ubuntu/tags/list
+```
+   Expected result:
+```
+{"name":"my-ubuntu","tags":["latest"]}
 ```
